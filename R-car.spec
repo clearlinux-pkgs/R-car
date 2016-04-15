@@ -4,7 +4,7 @@
 #
 Name     : R-car
 Version  : 2.0
-Release  : 21
+Release  : 22
 URL      : http://cran.r-project.org/src/contrib/car_2.0-24.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/car_2.0-24.tar.gz
 Summary  : No detailed summary available
