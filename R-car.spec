@@ -4,7 +4,7 @@
 #
 Name     : R-car
 Version  : 2.1.5
-Release  : 43
+Release  : 44
 URL      : https://cran.r-project.org/src/contrib/car_2.1-5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/car_2.1-5.tar.gz
 Summary  : Companion to Applied Regression
@@ -20,7 +20,8 @@ BuildRequires : R-quantreg
 BuildRequires : clr-R-helpers
 
 %description
-No detailed description available
+Functions and Datasets to Accompany J. Fox and S. Weisberg, 
+  An R Companion to Applied Regression, Second Edition, Sage, 2011.
 
 %prep
 %setup -q -c -n car
@@ -30,11 +31,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1499271202
+export SOURCE_DATE_EPOCH=1502397547
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1499271202
+export SOURCE_DATE_EPOCH=1502397547
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
