@@ -4,7 +4,7 @@
 #
 Name     : R-car
 Version  : 2.1.5
-Release  : 47
+Release  : 48
 URL      : https://cran.r-project.org/src/contrib/car_2.1-5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/car_2.1-5.tar.gz
 Summary  : Companion to Applied Regression
