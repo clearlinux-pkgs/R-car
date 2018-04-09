@@ -4,27 +4,25 @@
 #
 Name     : R-car
 Version  : 3.0.0
-Release  : 54
+Release  : 55
 URL      : https://cran.r-project.org/src/contrib/car_3.0-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/car_3.0-0.tar.gz
 Summary  : Companion to Applied Regression
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-leaps
-Requires: R-maptools
-Requires: R-rgl
-Requires: R-survey
+Requires: R-abind
+Requires: R-carData
+Requires: R-rio
 BuildRequires : R-Rcpp
 BuildRequires : R-SparseM
-BuildRequires : R-leaps
+BuildRequires : R-abind
+BuildRequires : R-carData
 BuildRequires : R-lme4
-BuildRequires : R-maptools
 BuildRequires : R-minqa
 BuildRequires : R-nloptr
 BuildRequires : R-pbkrtest
 BuildRequires : R-quantreg
-BuildRequires : R-rgl
-BuildRequires : R-survey
+BuildRequires : R-rio
 BuildRequires : clr-R-helpers
 
 %description
@@ -39,11 +37,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522897401
+export SOURCE_DATE_EPOCH=1523293027
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1522897401
+export SOURCE_DATE_EPOCH=1523293027
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
