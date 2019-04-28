@@ -1,7 +1,13 @@
 3.0.2
 R-abind
 R-carData
+R-cellranger
+R-forcats
 R-leaps
+R-lmtest
+R-maptools
 R-rgl
 R-rio
+R-sandwich
 R-survey
+R-zip

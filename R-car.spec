@@ -4,25 +4,37 @@
 #
 Name     : R-car
 Version  : 3.0.2
-Release  : 72
+Release  : 73
 URL      : https://cran.r-project.org/src/contrib/car_3.0-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/car_3.0-2.tar.gz
 Summary  : Companion to Applied Regression
 Group    : Development/Tools
 License  : GPL-2.0+
+Requires: R-cellranger
+Requires: R-forcats
+Requires: R-lmtest
+Requires: R-maptools
+Requires: R-sandwich
+Requires: R-zip
 BuildRequires : R-Rcpp
 BuildRequires : R-SparseM
 BuildRequires : R-abind
 BuildRequires : R-carData
+BuildRequires : R-cellranger
+BuildRequires : R-forcats
 BuildRequires : R-leaps
 BuildRequires : R-lme4
+BuildRequires : R-lmtest
+BuildRequires : R-maptools
 BuildRequires : R-minqa
 BuildRequires : R-nloptr
 BuildRequires : R-pbkrtest
 BuildRequires : R-quantreg
 BuildRequires : R-rgl
 BuildRequires : R-rio
+BuildRequires : R-sandwich
 BuildRequires : R-survey
+BuildRequires : R-zip
 BuildRequires : buildreq-R
 
 %description
@@ -37,10 +49,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552725430
+export SOURCE_DATE_EPOCH=1556467919
 
 %install
-export SOURCE_DATE_EPOCH=1552725430
+export SOURCE_DATE_EPOCH=1556467919
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -76,7 +88,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc  car || :
+R CMD check --no-manual --no-examples --no-codoc car || :
 
 
 %files
