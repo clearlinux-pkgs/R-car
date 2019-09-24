@@ -10,10 +10,11 @@ R-alr3
 R-carData
 R-drc
 R-dynlm
-R-effects
+R-emmeans
 R-gtools
 R-lme4
 R-lmtest
 R-pscl
+R-robCompositions
 R-sandwich
 R-systemfit

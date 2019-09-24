@@ -4,7 +4,7 @@
 #
 Name     : R-car
 Version  : 3.0.3
-Release  : 78
+Release  : 79
 URL      : https://cran.r-project.org/src/contrib/car_3.0-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/car_3.0-3.tar.gz
 Summary  : Companion to Applied Regression
@@ -12,47 +12,22 @@ Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-abind
 Requires: R-carData
-Requires: R-cellranger
-Requires: R-data.table
-Requires: R-forcats
-Requires: R-haven
-Requires: R-hms
-Requires: R-leaps
-Requires: R-lmtest
+Requires: R-lme4
 Requires: R-maptools
-Requires: R-openxlsx
-Requires: R-pillar
-Requires: R-pkgconfig
-Requires: R-readxl
-Requires: R-rgl
+Requires: R-pbkrtest
+Requires: R-quantreg
 Requires: R-rio
-Requires: R-survey
-Requires: R-zip
 BuildRequires : R-Rcpp
 BuildRequires : R-SparseM
 BuildRequires : R-abind
 BuildRequires : R-carData
-BuildRequires : R-cellranger
-BuildRequires : R-data.table
-BuildRequires : R-forcats
-BuildRequires : R-haven
-BuildRequires : R-hms
-BuildRequires : R-leaps
 BuildRequires : R-lme4
-BuildRequires : R-lmtest
 BuildRequires : R-maptools
 BuildRequires : R-minqa
 BuildRequires : R-nloptr
-BuildRequires : R-openxlsx
 BuildRequires : R-pbkrtest
-BuildRequires : R-pillar
-BuildRequires : R-pkgconfig
 BuildRequires : R-quantreg
-BuildRequires : R-readxl
-BuildRequires : R-rgl
 BuildRequires : R-rio
-BuildRequires : R-survey
-BuildRequires : R-zip
 BuildRequires : buildreq-R
 
 %description
@@ -66,13 +41,13 @@ Functions to Accompany J. Fox and S. Weisberg,
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1558995307
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1569354603
 
 %install
-export SOURCE_DATE_EPOCH=1558995307
+export SOURCE_DATE_EPOCH=1569354603
 rm -rf %{buildroot}
-export LANG=C
+export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -101,7 +76,7 @@ R CMD INSTALL --preclean --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} 
 cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
