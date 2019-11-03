@@ -4,7 +4,7 @@
 #
 Name     : R-car
 Version  : 3.0.4
-Release  : 80
+Release  : 81
 URL      : https://cran.r-project.org/src/contrib/car_3.0-4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/car_3.0-4.tar.gz
 Summary  : Companion to Applied Regression
