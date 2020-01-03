@@ -4,7 +4,7 @@
 #
 Name     : R-car
 Version  : 3.0.6
-Release  : 83
+Release  : 84
 URL      : https://cran.r-project.org/src/contrib/car_3.0-6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/car_3.0-6.tar.gz
 Summary  : Companion to Applied Regression
