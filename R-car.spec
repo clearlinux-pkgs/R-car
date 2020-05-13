@@ -4,7 +4,7 @@
 #
 Name     : R-car
 Version  : 3.0.7
-Release  : 86
+Release  : 87
 URL      : https://cran.r-project.org/src/contrib/car_3.0-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/car_3.0-7.tar.gz
 Summary  : Companion to Applied Regression
@@ -17,9 +17,7 @@ Requires: R-maptools
 Requires: R-pbkrtest
 Requires: R-quantreg
 Requires: R-rio
-Requires: R-survey
 BuildRequires : R-Rcpp
-BuildRequires : R-SparseM
 BuildRequires : R-abind
 BuildRequires : R-carData
 BuildRequires : R-lme4
@@ -29,9 +27,7 @@ BuildRequires : R-nloptr
 BuildRequires : R-pbkrtest
 BuildRequires : R-quantreg
 BuildRequires : R-rio
-BuildRequires : R-survey
 BuildRequires : buildreq-R
-BuildRequires : texlive
 
 %description
 Functions to Accompany J. Fox and S. Weisberg, 
@@ -39,21 +35,22 @@ Functions to Accompany J. Fox and S. Weisberg,
 
 %prep
 %setup -q -c -n car
+cd %{_builddir}/car
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583972167
+export SOURCE_DATE_EPOCH=1589409637
 
 %install
-export SOURCE_DATE_EPOCH=1583972167
+export SOURCE_DATE_EPOCH=1589409637
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

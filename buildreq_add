@@ -1,9 +1,5 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-R-quantreg
-R-pbkrtest
-R-lme4
 R-Rcpp
 R-minqa
 R-nloptr
-R-SparseM
