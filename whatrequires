@@ -1,13 +1,15 @@
 # This file contains recursive sources that require this package
 R-AER
+R-Lahman
 R-RcmdrMisc
-R-VGAM
 R-VIM
 R-afex
 R-alr3
 R-drc
 R-dynlm
+R-effects
 R-emmeans
+R-plm
 R-pscl
 R-robCompositions
 R-systemfit
