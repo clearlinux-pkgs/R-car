@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 R-AER
-R-Lahman
 R-RcmdrMisc
 R-VIM
 R-afex
